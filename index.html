@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore a 3DeT Victory Pokédex: a ferramenta essencial para adaptar os Pokémon ao sistema de RPG brasileiro 3DeT Victory da Jambô Editora. Descubra uma coleção abrangente de fichas de personagem e regras especiais para criar movimentos únicos e desenvolver a mecânica de evolução dos seus Pokémon."
+    />
+    <meta
+      name="keywords"
+      content="3DeT, 3DeT Victory, Pokémon, RPG, fichas de personagem, adaptação, Jambô Editora, Pokédex, sistema de RPG, Pokémon Company, Nintendo, Game Freak"
+    />
+    <meta name="author" content="Jean 'Painho' Fernandes" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="./index.html" />
+    <meta property="og:title" content="3DeT" Victory Pokédex />
+    <meta
+      property="og:description"
+      content="Explore a 3DeT Victory Pokédex: a ferramenta essencial para adaptar os Pokémon ao sistema de RPG brasileiro 3DeT Victory da Jambô Editora. Descubra uma coleção abrangente de fichas de personagem e regras especiais para criar movimentos únicos e desenvolver a mecânica de evolução dos seus Pokémon."
+    />
+    <meta property="og:image" content="./assets/og-image.png" />
+    <meta property="og:url" content="./index.html" />
+    <meta property="og:type" content="website" />
+    <!-- favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="./assets/favicons/" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./assets/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./assets/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./assets/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="./assets/favicons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="./assets/favicons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/favicons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="./assets/favicons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="./assets/favicons/" sizes="196x196" />
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon-16x16.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="./assets/favicons/favicon-128.png" sizes="128x128" />
+    <meta name="application-name" content="&nbsp;" />
+    <meta name="msapplication-TileColor" content="#E13637" />
+    <meta name="msapplication-TileImage" content="./assets/faviconmstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="./assets/faviconmstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="./assets/faviconmstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="./assets/faviconmstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="./assets/faviconmstile-310x310.png" />
+    <!-- /favicons -->
+    <!-- css -->
+    <link href="./css/output.css" rel="stylesheet" />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- /css -->
+    <!-- js -->
+    <script defer src="./js/main.js" type="module"></script>
+    <!-- /js -->
+  </head>
+
+  <body class="prose prose-zinc prose-a:text-yellow-500 max-w-none bg-zinc-800">
+    <header class="not-prose bg-zinc-900 h-16">
+      <img src="./assets/logo-default.webp" alt="3DeT" Victory Pokédex class="h-full m-auto" />
+    </header>
+    <div class="m-4 space-y-4">
+      <section id="dex" class="max-w-prose mx-auto bg-red-500 p-4 rounded-2xl shadow-lg overflow-hidden">
+        <form class="form mb-4">
+          <label for="search" class="relative">
+            <span class="sr-only">Pesquisar</span>
+            <input
+              class="input__search placeholder:italic placeholder:text-zinc-400 border border-zinc-200 bg-white rounded-lg p-4 pl-12 w-full ring-inset ring-offset-2 ring-sky-300 focus:ring-2 outline-none peer"
+              type="text"
+              placeholder="Nome ou Número do Pokémon"
+              name="search"
+              required
+            />
+            <i class="bx bx-search absolute top-1/2 -translate-y-1/2 left-4 text-2xl peer-focus:text-red-500"></i>
+          </label>
+        </form>
+        <div>
+          <div class="relative h-48 bg-[url('../assets/background.png')] bg-center bg-cover bg-no-repeat rounded-t-lg">
+            <img src="" alt="" class="pokemon__image h-full mx-auto my-0" />
+            <div
+              class="absolute right-4 top-4 bg-zinc-900 text-white text-center rounded-full h-14 w-14 flex items-center justify-center"
+            >
+              <div>
+                <span class="pokemon__pts text-2xl font-bold leading-none"></span>
+                <div class="font-bold text-xs uppercase leading-none">Pts</div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-zinc-900 text-zinc-100 p-4 flex items-center gap-2">
+            <span class="pokemon__number text-xs bg-zinc-500 rounded-full px-2 empty:hidden"></span>
+            <h1 class="m-0 flex-1 text-zinc-100 line-clamp-1"><span class="pokemon__name"></span></h1>
+          </div>
+          <div class="bg-white rounded-b-lg p-4">
+            <div class="grid grid-cols-3 gap-2 mb-2">
+              <div class="border-zinc-900 border-2 text-center rounded-lg overflow-hidden">
+                <div class="bg-zinc-900 text-white font-bold line-clamp-1">Poder</div>
+                <div class="font-bold text-4xl h-10">
+                  <span class="pokemon__p"></span>
+                </div>
+                <div class="border-t border-zinc-900 text-sm h-5">
+                  <span>PA: </span><span class="pokemon__pa font-bold"></span>
+                </div>
+              </div>
+              <div class="border-zinc-900 border-2 text-center rounded-lg overflow-hidden">
+                <div class="bg-zinc-900 text-white font-bold line-clamp-1">Habilidade</div>
+                <div class="font-bold text-4xl h-10">
+                  <span class="pokemon__h"></span>
+                </div>
+                <div class="border-t border-zinc-900 text-sm h-5">
+                  <span>PM: </span><span class="pokemon__pm font-bold"></span>
+                </div>
+              </div>
+              <div class="border-zinc-900 border-2 text-center rounded-lg overflow-hidden">
+                <div class="bg-zinc-900 text-white font-bold line-clamp-1">Resistência</div>
+                <div class="font-bold text-4xl h-10">
+                  <span class="pokemon__r"></span>
+                </div>
+                <div class="border-t border-zinc-900 text-sm h-5">
+                  <span>PV: </span><span class="pokemon__pv font-bold"></span>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <div class="font-bold">Arquétipo:</div>
+                <span class="pokemon__types text-sm"></span>
+              </div>
+              <div>
+                <div class="font-bold">Perícias:</div>
+                <div class="pokemon__skills text-sm"></div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+              <div>
+                <div class="font-bold">Vantagens:</div>
+                <div class="pokemon__pros text-sm"></div>
+              </div>
+              <div>
+                <div class="font-bold">Desvantagens:</div>
+                <div class="pokemon__cons text-sm"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4 flex items-center justify-between gap-4">
+            <button
+              class="btn-prev bg-zinc-700 text-white border-b-4 border-zinc-900 font-bold flex items-center gap-1 px-4 py-2 rounded-lg disabled:bg-zinc-400 disabled:text-zinc-500 hover:bg-zinc-900 hover:border-0 hover:mt-1 disabled:border-0 disabled:pointer-events-none"
+            >
+              <i class="bx bxs-chevron-left"></i><span>Anterior</span>
+            </button>
+            <button
+              class="btn-random bg-red-700 text-white border-b-4 border-red-900 font-bold flex items-center gap-1 px-4 py-2 rounded-lg hover:bg-red-900 hover:border-0 hover:mt-1"
+            >
+              <i class="bx bxs-dice-5 text-3xl"></i><span class="sr-only">Aleatório</span>
+            </button>
+            <button
+              class="btn-next bg-zinc-700 text-white border-b-4 border-zinc-900 font-bold flex items-center gap-1 px-4 py-2 rounded-lg disabled:bg-zinc-400 disabled:text-zinc-500 hover:bg-zinc-900 hover:border-0 hover:mt-1 disabled:border-0 disabled:pointer-events-none"
+            >
+              <span>Próximo</span><i class="bx bxs-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="max-w-prose mx-auto bg-white px-8 py-4 rounded-2xl shadow-lg">
+        <h2 class="text-yellow-500">Sobre a 3DeT Victory Pokédex</h2>
+        <p>
+          A <em>3DeT Victory Pokédex</em> surge como uma solução para um dilema comum entre mestres de RPG:
+          <strong
+            >como adaptar e equilibrar as fichas de personagens para os mais de 1000 Pokémon existentes em suas
+            campanhas?</strong
+          >
+          Para responder a essas perguntas e facilitar a vida dos mestres, eu, <strong>Jean "Painho" Fernandes</strong>,
+          criei esse projeto de fã para fã, a <strong><em>3DeT Victory Pokédex</em></strong
+          >. Sem fins lucrativos, nosso objetivo é fornecer uma ferramenta que simplifique a adaptação dos adoráveis
+          monstrinhos de bolso da franquia <strong>Pokémon</strong> para o sistema de RPG brasileiro
+          <strong><em>3DeT Victory</em> da Jambô Editora</strong>.
+        </p>
+
+        <p>
+          Este projeto pode ser considerado uma evolução espiritual da <em>Pokédex Victory</em>, desenvolvida por
+          <strong>Arthur Eilert Letona e Pedro Rodrigues</strong> do
+          <a href="https://chat.whatsapp.com/HwEGeZq9L3WK5KzpzhSj9t" target="_blank" rel="noopener noreferrer"
+            >grupo de 3DeT Victory no Whatsapp</a
+          >. Além disso, ele faz uso da <em>PokéAPI</em>, uma API de Pokémon desenvolvida por
+          <strong>Paul Hallett</strong> e uma equipe de colaboradores. Embora existam semelhanças entre os projetos, as
+          fórmulas para calcular os atributos e o número de pontos utilizados na criação das fichas são diferentes.
+        </p>
+
+        <p>
+          A <em>3DeT Victory Pokédex</em> não busca replicar integralmente a vivência dos jogos da franquia Pokémon em
+          sua adaptação. Em vez disso,
+          <strong
+            >visa proporcionar uma imersão acessível aos fãs do universo Pokémon, tanto aqueles que acompanham outras
+            mídias, como a série animada, filmes e quadrinhos, quanto os jogadores dos próprios jogos.</strong
+          >
+          Com uma abordagem adaptativa e flexível, oferece aos participantes a oportunidade de explorar e vivenciar
+          aventuras únicas no mundo dos Pokémon.
+        </p>
+      </section>
+      <section id="rules" class="max-w-prose mx-auto bg-white px-8 py-4 rounded-2xl shadow-lg">
+        <h2 class="text-yellow-500">Regras Especiais</h2>
+        <div>
+          <h3>Como são calculados os atributos e pontos?</h3>
+          <p>
+            <strong>Os atributos</strong> de cada Pokémon são calculados com referência nos
+            <em>"Base Stats"</em> oficiais de cada um:
+          </p>
+          <ul>
+            <li>
+              <strong>Poder</strong> é calculado como (<em>Atk</em> + <em>S.Atk</em> + 2 x o maior entre <em>Atk</em> e
+              <em>S.Atk</em>) / 80
+            </li>
+            <li><strong>Habilidade</strong> é calculada como (3 x <em>Spd</em> + <em>S.Atk</em>) / 80</li>
+            <li>
+              <strong>Resistência</strong> é calculada como (<em>HP</em> + <em>Def</em> + <em>S.Def</em> + o maior entre
+              <em>HP</em>, <em>Def</em> e <em>S.Def</em>) / 80
+            </li>
+          </ul>
+
+          <p><em>Esses valores são sempre arredondados para baixo.</em></p>
+
+          <p>
+            Para calcular <strong>os Pontos</strong> (total de pontos utilizados na criação da ficha do personagem), o
+            processo adotado é o seguinte:
+          </p>
+          <ul>
+            <li>
+              <strong>Soma-se todos os atributos</strong>, sendo que cada valor <strong>acima de 5 tem peso 2</strong>.
+            </li>
+            <li>
+              Acrescenta-se <strong>+1 ponto</strong> por <strong>Tipo de Pokémon</strong> presente no
+              <strong>Arquétipo</strong>.
+            </li>
+            <li>
+              Por fim, somam-se ou subtraem-se os pontos de <strong>Perícias, Vantagens e Desvantagens</strong>,
+              <em>lembrando que as Vantagens e Desvantagens concedidas pelo Arquétipo não devem ser contabilizadas</em>.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Faça sempre os ajustes necessários</h3>
+          <p>
+            Por padrão, todos os Pokémon listados na <em>3DeT Victory Pokédex</em> recebem a perícia
+            <strong>Luta[+1pt]</strong> e as desvantagens <strong>Diferente[-1pt]</strong> e
+            <strong>Inculto[-1pt]</strong>. No entanto, reconhecemos que certos Pokémon, como <strong>Arceus</strong>,
+            um <strong>Meowth falante</strong> ou até mesmo um <strong>Detetive Pikachu</strong>, não se encaixam na
+            desvantagem Inculto, já que são capazes de se comunicar facilmente com humanos. Da mesma forma, a maioria
+            dos Pokémon do <strong>tipo Voador</strong> deveriam receber a vantagem <strong>Voo[+1pt]</strong>. Além
+            disso, com o passar do tempo e o fortalecimento do vínculo entre Pokémon e treinador, existe a possibilidade
+            de <strong>gastar 10XP</strong> para <strong>remover a desvantagem Inculto</strong>. Isso permite uma
+            comunicação mais fluída e sem dificuldades com o seu Pokémon. Portanto,
+            <strong>sinta-se à vontade para fazer quaisquer ajustes necessários em suas fichas de personagem.</strong>
+          </p>
+        </div>
+        <div>
+          <h3>Arquétipos e os Tipos de Pokémon</h3>
+          <p>
+            Os <strong>Tipos de Pokémon</strong> funcionam como <strong>arquétipos</strong> na mecânica do
+            <em>3DeT Victory</em>, concedendo algumas <strong>vantagens e desvantagens específicas</strong>. Na
+            <em>3DeT Victory Pokédex</em>, o arquétipo é responsável por conceder as vantagens:
+            <strong>Resistente</strong> e <strong>Imune</strong>, e a desvantagem: <strong>Vulnerável</strong>, sempre
+            atrelados a uma tipagem. <strong>Cada Tipo de Pokémon adiciona 1 ponto ao custo do arquétipo.</strong>
+          </p>
+          <blockquote>
+            <p>
+              Vamos ao exemplo: um <strong>Jigglypuff tem o arquétipo "Normal / Fada"</strong>, que lhe concede as
+              vantagens: <strong>Resistente(Inseto, Sombrio)</strong> e <strong>Imune (Dragão, Fantasma)</strong>, e a
+              desvantagem: <strong>Vulnerável (Aço, Venenoso)</strong>. Isso significa que ao sofrer um ataque do tipo
+              Inseto, por ter a vantagem Resistente(Inseto), Jigglypuff só sofrerá <strong>metade do dano</strong>. Já
+              ao receber um ataque do tipo Venenoso, Jigglypuff receberá o <strong>dobro do dano</strong> por ser
+              Vulnerável(Venenoso). Ataques do tipo Dragão ou Fantasma <strong>não causam dano algum</strong> a
+              Jigglypuff.
+            </p>
+          </blockquote>
+        </div>
+        <div>
+          <h3>E os ataques do Pokémon?</h3>
+          <p>
+            Os ataques de um Pokémon podem ser tratados de diferentes maneiras no contexto do <em>3DeT Victory</em>.
+            <strong>Ataques comuns, como uma bicada, cabeçada ou um arranhão</strong>, podem ser considerados apenas
+            como um <strong>Ataque do sistema</strong>.
+          </p>
+          <p>
+            No entanto, para criar <strong>movimentos mais poderosos ou com mais personalidade</strong>, é possível
+            utilizar as regras de <strong>Vantagens e Técnicas do <em>3DeT Victory</em></strong
+            >. Por exemplo, se você deseja que seu <strong>Jigglypuff</strong> tenha um movimento do
+            <strong>tipo Fada</strong> que coloque o alvo para dormir ao cantar, você pode adaptar isso utilizando a
+            vantagem <strong>Paralisia[+1pt]</strong>.
+          </p>
+          <blockquote>
+            <p>
+              Dessa forma, você pode criar a vantagem
+              <strong><em>"Canção de Ninar (Fada)"</em> Paralisia[+1pt]</strong>. Em efeitos práticos, ela segue a mesma
+              regra da vantagem <strong>Paralisia</strong> do <em>3DeT Victory</em>:
+              <em
+                >realiza um ataque do tipo Fada e gasta 2PM. Se bem-sucedido, o alvo fica indefeso até o fim da cena ou
+                até sofrer dano. A cada turno, o alvo pode fazer um teste de R (6 + Poder do atacante) para cancelar o
+                efeito.</em
+              >
+            </p>
+          </blockquote>
+        </div>
+        <div>
+          <h3>Como evoluir o Pokémon?</h3>
+          <p>
+            Um Pokémon estará apto a evoluir quando acumular experiência suficiente. O cálculo para determinar a
+            quantidade de experiência necessária para a evolução é o seguinte:
+          </p>
+          <p><strong>Experiência necessária = (Pontos do Próximo Estágio - Pontos do Estágio Atual) × 10XP</strong></p>
+          <blockquote>
+            <p>
+              Por exemplo, um <strong>Jigglypuff(8pts)</strong> evoluindo para
+              <strong>Wigglytuff(12pts)</strong> precisaria acumular <strong>40XP + Pedra da Lua</strong> para evoluir.
+              Se durante a criação da ficha do seu Jigglypuff, além das sugestões da <em>3DeT Victory Pokédex</em> ,
+              você adicionou a perícia <strong>Arte[+1pt]</strong> e uma Vantagem
+              <strong><em>"Canção de Ninar (Fada)" </em>Paralisia[+1pt]</strong>, você estará criando um
+              <strong>Jigglypuff(10pts)</strong>. No entanto,
+              <strong>sua necessidade de 40XP + Pedra da Lua continuará a mesma para sua evolução</strong>. Perceba que
+              Pokémon como Jigglypuff que têm uma condição especial para evolução (ex: portar uma Pedra da Lua), mantêm
+              a necessidade de <strong>XP para evolução + a condição especial</strong>.
+            </p>
+          </blockquote>
+          <h4>Como fazer a ficha do meu Pokémon evoluído?</h4>
+          <blockquote>
+            <p>
+              Vamos continuar utilizando o exemplo anterior: Você criou um Jigglypuff,
+              <strong>que por padrão tem 8 pontos</strong>, e adicionou uma perícia <strong>Arte [+1pt]</strong> e uma
+              Vantagem <strong><em>"Canção de Ninar (Fada)"</em> Paralisia[+1pt]</strong>, tornando-o um
+              <strong>Jigglypuff(10pts)</strong>. Durante as suas aventuras você conseguiu acumular
+              <strong>10XP</strong> e resolveu com isso adquirir uma nova Vantagem
+              <strong>"Hipervoz (Normal)" Ataque Especial(Área)[+1pt]</strong>, agora você tem um
+              <strong>Jigglypuff(11pts)</strong>. Desbravando o Monte Lua você encontra uma
+              <strong>Pedra da Lua</strong>, e percebe que já <strong>acumulou mais 40XP</strong> e decide que é hora de
+              evoluir seu Jigglypuff.
+            </p>
+          </blockquote>
+          <p>
+            Ao criar a nova ficha para o seu, agora, Wigglytuff , como seu <strong>Jigglypuff(11pts)</strong> tem uma
+            diferença de <strong>3 pontos</strong> para o <strong>Jigglypuff padrão(8pts)</strong>, você pode utilizar o
+            <strong>Wigglytuff(12pts)</strong> da <em>3DeT Victory Pokédex</em> como base e
+            <strong>manter as vantagens, desvantagens e perícias que o seu Jigglypuff adiquiriu antes de evoluir</strong
+            >, fazendo o seu <strong>Wigglytuff(15pts)</strong>.
+          </p>
+          <blockquote>
+            <p>
+              <strong>Como alternativa</strong>, <em>e com a aprovação do Mestre</em>, caso alguma vantagem, desvantagem
+              ou perícia, não faça mais sentido para o estágio evoluído, você pode substituí-las
+              <strong>(desde que mantenha o mesmo número de pontos utilizados)</strong>.
+            </p>
+          </blockquote>
+          <p>
+            Caso tenha utilizado <strong>XP</strong> para comprar <strong>Poder, Habilidade ou Resistência</strong>,
+            lembre-se de anotar essa diferença para o estágio evoluído.
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="max-w-prose mx-auto bg-white px-8 py-4 rounded-2xl shadow-lg">
+        <h3 class="text-yellow-500">Fale Conosco</h3>
+        <p>
+          Se surgirem dúvidas, se precisar de suporte ou se quiser contribuir com sugestões ou de qualquer outra forma
+          para o projeto, não hesite em nos contatar através do email
+          <a href="mailto:3detvictorypokedex@gmail.com">3detvictorypokedex@gmail.com</a>.
+        </p>
+        <p><strong>Estamos prontos para ajudar!</strong></p>
+      </section>
+    </div>
+    <footer class="mt-8 px-4 py-8 bg-zinc-900 text-zinc-100">
+      <img src="./assets/logo-square.webp" alt="3DeT" Victory Pokédex class="mx-auto h-32 -my-4" />
+      <section id="copyright" class="max-w-prose mx-auto">
+        <small
+          ><p>
+            Todos os direitos relacionados aos Pokémon, incluindo nomes, imagens e propriedades, são reservados à The
+            Pokémon Company, Nintendo e Game Freak. A 3DeT Victory Pokédex é um projeto criado por fãs, sem fins
+            lucrativos, e não possui qualquer afiliação oficial com as mencionadas empresas. Além disso, o sistema de
+            RPG 3DeT Victory é propriedade da Editora Jambô, responsável por sua criação e publicação. Qualquer uso
+            desses nomes, imagens e conceitos deve ser feito de acordo com as políticas e diretrizes estabelecidas pelas
+            respectivas empresas e editora.
+          </p></small
+        >
+      </section>
+    </footer>
+  </body>
+</html>
