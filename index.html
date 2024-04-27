@@ -81,11 +81,19 @@
   </head>
 
   <body class="prose prose-zinc prose-a:text-yellow-500 max-w-none bg-zinc-800">
-    <header class="not-prose bg-zinc-900 h-16">
-      <img src="./assets/logo-default.webp" alt="3DeT Victory Pokédex" class="h-full m-auto" />
+    <header class="sticky top-0 z-50 not-prose bg-zinc-900 shadow-lg">
+      <div class="h-14">
+        <img src="./assets/logo-default.webp" alt="3DeT Victory Pokédex" class="h-full m-auto" />
+      </div>
+      <nav class="flex items-center justify-center gap-4 pb-4">
+        <a href="#pokedex" class="text-xs text-white uppercase hover:text-yellow-500">Pokédex</a>
+        <a href="#sobre" class="text-xs text-white uppercase hover:text-yellow-500">Sobre</a>
+        <a href="#regras" class="text-xs text-white uppercase hover:text-yellow-500">Regras</a>
+        <a href="#contato" class="text-xs text-white uppercase hover:text-yellow-500">Contato</a>
+      </nav>
     </header>
     <div class="m-4 space-y-4">
-      <section id="dex" class="max-w-prose mx-auto bg-red-500 p-4 rounded-2xl shadow-lg overflow-hidden">
+      <section id="pokedex" class="max-w-prose mx-auto bg-red-500 p-4 rounded-2xl shadow-lg overflow-hidden">
         <form class="form mb-4">
           <label for="search" class="relative">
             <span class="sr-only">Pesquisar</span>
@@ -118,7 +126,7 @@
           <div class="bg-white rounded-b-lg p-4">
             <div class="grid grid-cols-3 gap-2 mb-2">
               <div class="border-zinc-900 border-2 text-center rounded-lg overflow-hidden">
-                <div class="bg-zinc-900 text-white font-bold line-clamp-1">Poder</div>
+                <div class="bg-zinc-900 text-white font-bold text-xs sm:text-base">Poder</div>
                 <div class="font-bold text-4xl h-10">
                   <span class="pokemon__p"></span>
                 </div>
@@ -127,7 +135,7 @@
                 </div>
               </div>
               <div class="border-zinc-900 border-2 text-center rounded-lg overflow-hidden">
-                <div class="bg-zinc-900 text-white font-bold line-clamp-1">Habilidade</div>
+                <div class="bg-zinc-900 text-white font-bold text-xs sm:text-base">Habilidade</div>
                 <div class="font-bold text-4xl h-10">
                   <span class="pokemon__h"></span>
                 </div>
@@ -136,7 +144,7 @@
                 </div>
               </div>
               <div class="border-zinc-900 border-2 text-center rounded-lg overflow-hidden">
-                <div class="bg-zinc-900 text-white font-bold line-clamp-1">Resistência</div>
+                <div class="bg-zinc-900 text-white font-bold text-xs sm:text-base">Resistência</div>
                 <div class="font-bold text-4xl h-10">
                   <span class="pokemon__r"></span>
                 </div>
@@ -170,7 +178,7 @@
             <button
               class="btn-prev bg-zinc-700 text-white border-b-4 border-zinc-900 font-bold flex items-center gap-1 px-4 py-2 rounded-lg disabled:bg-zinc-400 disabled:text-zinc-500 hover:bg-zinc-900 hover:border-0 hover:mt-1 disabled:border-0 disabled:pointer-events-none"
             >
-              <i class="bx bxs-chevron-left"></i><span>Anterior</span>
+              <i class="bx bxs-chevron-left text-3xl"></i><span class="hidden sm:block">Anterior</span>
             </button>
             <button
               class="btn-random bg-red-700 text-white border-b-4 border-red-900 font-bold flex items-center gap-1 px-4 py-2 rounded-lg hover:bg-red-900 hover:border-0 hover:mt-1"
@@ -180,13 +188,13 @@
             <button
               class="btn-next bg-zinc-700 text-white border-b-4 border-zinc-900 font-bold flex items-center gap-1 px-4 py-2 rounded-lg disabled:bg-zinc-400 disabled:text-zinc-500 hover:bg-zinc-900 hover:border-0 hover:mt-1 disabled:border-0 disabled:pointer-events-none"
             >
-              <span>Próximo</span><i class="bx bxs-chevron-right"></i>
+              <span class="hidden sm:block">Próximo</span><i class="bx bxs-chevron-right text-3xl"></i>
             </button>
           </div>
         </div>
       </section>
-      <section id="about" class="max-w-prose mx-auto bg-white px-8 py-4 rounded-2xl shadow-lg">
-        <h2 class="text-yellow-500">Sobre a 3DeT Victory Pokédex</h2>
+      <section id="sobre" class="max-w-prose mx-auto bg-white px-4 md:px-8 py-4 rounded-2xl shadow-lg">
+        <h2 class="text-yellow-500 mt-4">Sobre a 3DeT Victory Pokédex</h2>
         <p>
           A <em>3DeT Victory Pokédex</em> surge como uma solução para um dilema comum entre mestres de RPG:
           <strong
@@ -221,9 +229,37 @@
           aventuras únicas no mundo dos Pokémon.
         </p>
       </section>
-      <section id="rules" class="max-w-prose mx-auto bg-white px-8 py-4 rounded-2xl shadow-lg">
-        <h2 class="text-yellow-500">Regras Especiais</h2>
-        <div>
+      <section id="novidades" class="max-w-prose mx-auto bg-white px-4 md:px-8 py-4 rounded-2xl shadow-lg">
+        <h2 class="text-yellow-500 mt-4">Atualizações e Novidades</h2>
+        <table class="table-auto">
+          <tbody class="divide-y divide-zinc-200">
+            <tr>
+              <td>
+                <span class="text-xs font-bold bg-sky-200 text-sky-600 px-2 py-1 rounded-full">Novo</span>
+              </td>
+              <td class="text-sm">
+                A seção <a href="#novidades">Atualizações e Novidades</a> agora está disponível! Agora você pode ficar
+                por dentro das últimas funcionalidades e melhorias implementadas no projeto da
+                <em>3DeT Victory Pokédex</em>.
+              </td>
+              <td class="text-xs font-bold text-zinc-500">28/04/2024</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="text-xs font-bold bg-green-200 text-green-600 px-2 py-1 rounded-full">Atual.</span>
+              </td>
+              <td class="text-sm">
+                A seção <a href="#evolucao">Como evoluir o Pokémon?</a> foi atualizada para esclarecer ainda mais o
+                funcionamento das regras e aprimorar os exemplos fornecidos.
+              </td>
+              <td class="text-xs font-bold text-zinc-500">26/04/2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="regras" class="max-w-prose mx-auto bg-white px-4 md:px-8 py-4 rounded-2xl shadow-lg">
+        <h2 class="text-yellow-500 mt-4">Regras Especiais</h2>
+        <div id="atributos">
           <h3>Como são calculados os atributos e pontos?</h3>
           <p>
             <strong>Os atributos</strong> de cada Pokémon são calculados com referência nos
@@ -261,7 +297,7 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div id="ajustes">
           <h3>Faça sempre os ajustes necessários</h3>
           <p>
             Por padrão, todos os Pokémon listados na <em>3DeT Victory Pokédex</em> recebem a perícia
@@ -276,7 +312,7 @@
             <strong>sinta-se à vontade para fazer quaisquer ajustes necessários em suas fichas de personagem.</strong>
           </p>
         </div>
-        <div>
+        <div id="arquetipos">
           <h3>Arquétipos e os Tipos de Pokémon</h3>
           <p>
             Os <strong>Tipos de Pokémon</strong> funcionam como <strong>arquétipos</strong> na mecânica do
@@ -324,7 +360,7 @@
             </p>
           </blockquote>
         </div>
-        <div>
+        <div id="evolucao">
           <h3>Como evoluir o Pokémon?</h3>
           <p>
             Um Pokémon estará apto a evoluir quando acumular experiência suficiente. O cálculo para determinar a
@@ -399,8 +435,8 @@
           </blockquote>
         </div>
       </section>
-      <section id="contact" class="max-w-prose mx-auto bg-white px-8 py-4 rounded-2xl shadow-lg">
-        <h3 class="text-yellow-500">Fale Conosco</h3>
+      <section id="contato" class="max-w-prose mx-auto bg-white px-4 md:px-8 py-4 rounded-2xl shadow-lg">
+        <h2 class="text-yellow-500 mt-4">Fale Conosco</h2>
         <p>
           Se surgirem dúvidas, se precisar de suporte ou se quiser contribuir com sugestões ou de qualquer outra forma
           para o projeto, não hesite em nos contatar através do email

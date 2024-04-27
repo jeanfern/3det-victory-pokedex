@@ -83,5 +83,20 @@ document.addEventListener('keydown', (event) => {
   }
 });
 
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    const headerNavHeight = document.querySelector('header').offsetHeight;
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - headerNavHeight,
+        behavior: 'smooth',
+      });
+    }
+  });
+});
+
 renderPokemon(elements, searchPokemon, updateSearchPokemon, maxPokemonNumber);
 updateButtonState();
