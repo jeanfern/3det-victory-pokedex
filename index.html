@@ -240,6 +240,16 @@
           <tbody class="divide-y divide-zinc-200">
             <tr>
               <td>
+                <span class="text-xs font-bold bg-green-200 text-green-600 px-2 py-1 rounded-full">Atual.</span>
+              </td>
+              <td class="text-sm">
+                A seção <a href="#captura">Como capturar um Pokémon?</a> teve sua mecânica atualizada moficiando a forma
+                com que a Meta do Teste é calculada.
+              </td>
+              <td class="text-xs font-bold text-zinc-500">29/04/2024</td>
+            </tr>
+            <tr>
+              <td>
                 <span class="text-xs font-bold bg-sky-200 text-sky-600 px-2 py-1 rounded-full">Novo</span>
               </td>
               <td class="text-sm">
@@ -468,9 +478,9 @@
           <h3>Como capturar um Pokémon?</h3>
           <p>
             Para tentar capturar um Pokémon, <strong>você - como treinador(a)</strong>, irá gastar uma ação para fazer
-            um <strong>Teste de Habilidade</strong> com a <strong>Meta</strong> calculada da seguinte maneira:.
+            um <strong>Teste de Habilidade</strong> com a <strong>Meta Resistida</strong> calculada da seguinte maneira.
           </p>
-          <p><strong>Meta = Pontos + Metade do PV Atual do Pokémon Alvo</strong></p>
+          <p><strong>Meta = 1d6 + Metade dos Pontos + Metade do PV Atual do Pokémon Alvo</strong></p>
           <p class="leading-none">
             <small><strong>Observação:</strong> Valores fracionados são sempre arredondados para baixo.</small>
           </p>
@@ -496,8 +506,8 @@
             <p>
               Uma <strong>Jigglypuff</strong>, pelo padrão da <em>3DeT Victory Pokédex</em>, tem
               <strong>7 pontos</strong> e um total de <strong>15 pontos de vida</strong>. Se
-              <strong>Marina</strong> tentar capturá-la sem ao menos enfraquecê-la, a meta do teste seria de
-              <strong>14</strong>(7+15/2).
+              <strong>Marina</strong> tentar capturá-la sem ao menos enfraquecê-la, a meta do teste resistido seria de
+              <strong>1d6+10</strong>(7/2 + 15/2).
             </p>
             <p>
               <strong>Marina</strong> tem <strong>Habilidade(2)</strong>, e tem a perícia
@@ -516,7 +526,7 @@
             </p>
             <p>
               Como o <strong>Jigglypuff</strong> está apenas com <strong>3 pontos de vida</strong> agora, a
-              <strong>meta é 8</strong>(7 + 3/2).
+              <strong>meta é 4</strong>(7/2 + 3/2).
             </p>
             <p>
               <strong>Marina</strong> lança seus <strong>2d6</strong>, obtendo um resultado <strong>4 e 3</strong>,
@@ -664,7 +674,7 @@
                   <img src="./assets/balls/dream_ball.png" alt="Bola Sonho" class="m-0 w-10" />
                 </td>
                 <td class="text-sm font-bold align-middle">Bola Sonho</td>
-                <td class="text-sm align-middle">Concede Ganho quando o Pokémon alvo está dormindo.</td>
+                <td class="text-sm align-middle">Concede Ganho e bônus de +2 quando o Pokémon alvo está dormindo.</td>
               </tr>
               <tr>
                 <td class="w-10 align-middle">
