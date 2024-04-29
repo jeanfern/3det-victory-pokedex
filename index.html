@@ -80,7 +80,9 @@
     <!-- /js -->
   </head>
 
-  <body class="prose prose-zinc prose-a:text-yellow-500 max-w-none bg-zinc-800">
+  <body
+    class="prose prose-zinc prose-h2:text-yellow-500 prose-h3:text-yellow-500 prose-a:text-yellow-500 max-w-none bg-zinc-800"
+  >
     <header class="sticky top-0 z-50 not-prose bg-zinc-900 shadow-lg">
       <div class="h-14">
         <img src="./assets/logo-default.webp" alt="3DeT Victory Pokédex" class="h-full m-auto" />
@@ -194,7 +196,7 @@
         </div>
       </section>
       <section id="sobre" class="max-w-prose mx-auto bg-white px-4 md:px-8 py-4 rounded-2xl shadow-lg">
-        <h2 class="text-yellow-500 mt-4">Sobre a 3DeT Victory Pokédex</h2>
+        <h2 class="mt-4">Sobre a 3DeT Victory Pokédex</h2>
         <p>
           A <em>3DeT Victory Pokédex</em> surge como uma solução para um dilema comum entre mestres de RPG:
           <strong
@@ -205,7 +207,10 @@
           criei esse projeto de fã para fã, a <strong><em>3DeT Victory Pokédex</em></strong
           >. Sem fins lucrativos, nosso objetivo é fornecer uma ferramenta que simplifique a adaptação dos adoráveis
           monstrinhos de bolso da franquia <strong>Pokémon</strong> para o sistema de RPG brasileiro
-          <strong><em>3DeT Victory</em> da Jambô Editora</strong>.
+          <strong
+            ><a href="https://site.jamboeditora.com.br/3det/" target="_blank" rel="noopener noreferrer">3DeT Victory</a>
+            da Jambô Editora</strong
+          >.
         </p>
 
         <p>
@@ -230,9 +235,19 @@
         </p>
       </section>
       <section id="novidades" class="max-w-prose mx-auto bg-white px-4 md:px-8 py-4 rounded-2xl shadow-lg">
-        <h2 class="text-yellow-500 mt-4">Atualizações e Novidades</h2>
+        <h2 class="mt-4">Atualizações e Novidades</h2>
         <table class="table-auto">
           <tbody class="divide-y divide-zinc-200">
+            <tr>
+              <td>
+                <span class="text-xs font-bold bg-sky-200 text-sky-600 px-2 py-1 rounded-full">Novo</span>
+              </td>
+              <td class="text-sm">
+                As seções <a href="#captura">Como capturar um Pokémon?</a> e
+                <a href="#treinador">Como criar uma ficha de Treinador(a)?</a> foram adicionadas às Regras Especiais.
+              </td>
+              <td class="text-xs font-bold text-zinc-500">28/04/2024</td>
+            </tr>
             <tr>
               <td>
                 <span class="text-xs font-bold bg-sky-200 text-sky-600 px-2 py-1 rounded-full">Novo</span>
@@ -242,7 +257,7 @@
                 por dentro das últimas funcionalidades e melhorias implementadas no projeto da
                 <em>3DeT Victory Pokédex</em>.
               </td>
-              <td class="text-xs font-bold text-zinc-500">28/04/2024</td>
+              <td class="text-xs font-bold text-zinc-500">27/04/2024</td>
             </tr>
             <tr>
               <td>
@@ -258,9 +273,9 @@
         </table>
       </section>
       <section id="regras" class="max-w-prose mx-auto bg-white px-4 md:px-8 py-4 rounded-2xl shadow-lg">
-        <h2 class="text-yellow-500 mt-4">Regras Especiais</h2>
+        <h2 class="mt-4">Regras Especiais</h2>
         <div id="atributos">
-          <h3>Como são calculados os atributos e pontos?</h3>
+          <h3>Como são calculados os atributos e pontos dos Pokémon?</h3>
           <p>
             <strong>Os atributos</strong> de cada Pokémon são calculados com referência nos
             <em>"Base Stats"</em> oficiais de cada um:
@@ -316,10 +331,11 @@
           <h3>Arquétipos e os Tipos de Pokémon</h3>
           <p>
             Os <strong>Tipos de Pokémon</strong> funcionam como <strong>arquétipos</strong> na mecânica do
-            <em>3DeT Victory</em>, concedendo algumas <strong>vantagens e desvantagens específicas</strong>. Na
-            <em>3DeT Victory Pokédex</em>, o arquétipo é responsável por conceder as vantagens:
-            <strong>Resistente</strong> e <strong>Imune</strong>, e a desvantagem: <strong>Vulnerável</strong>, sempre
-            atrelados a uma tipagem. <strong>Cada Tipo de Pokémon adiciona 1 ponto ao custo do arquétipo.</strong>
+            <a href="https://site.jamboeditora.com.br/3det/" target="_blank" rel="noopener noreferrer">3DeT Victory</a>,
+            concedendo algumas <strong>vantagens e desvantagens específicas</strong>. Na <em>3DeT Victory Pokédex</em>,
+            o arquétipo é responsável por conceder as vantagens: <strong>Resistente</strong> e <strong>Imune</strong>, e
+            a desvantagem: <strong>Vulnerável</strong>, sempre atrelados a uma tipagem.
+            <strong>Cada Tipo de Pokémon adiciona 1 ponto ao custo do arquétipo.</strong>
           </p>
           <blockquote>
             <p>
@@ -333,16 +349,22 @@
             </p>
           </blockquote>
         </div>
-        <div>
+        <div id="ataques">
           <h3>E os ataques do Pokémon?</h3>
           <p>
-            Os ataques de um Pokémon podem ser tratados de diferentes maneiras no contexto do <em>3DeT Victory</em>.
+            Os ataques de um Pokémon podem ser tratados de diferentes maneiras no contexto do
+            <a href="https://site.jamboeditora.com.br/3det/" target="_blank" rel="noopener noreferrer">3DeT Victory</a>.
             <strong>Ataques comuns, como uma bicada, cabeçada ou um arranhão</strong>, podem ser considerados apenas
             como um <strong>Ataque do sistema</strong>.
           </p>
           <p>
             No entanto, para criar <strong>movimentos mais poderosos ou com mais personalidade</strong>, é possível
-            utilizar as regras de <strong>Vantagens e Técnicas do <em>3DeT Victory</em></strong
+            utilizar as regras de
+            <strong
+              >Vantagens e Técnicas do
+              <a href="https://site.jamboeditora.com.br/3det/" target="_blank" rel="noopener noreferrer"
+                >3DeT Victory</a
+              ></strong
             >. Por exemplo, se você deseja que sua <strong>Jigglypuff</strong> tenha um movimento do
             <strong>tipo Fada</strong> que coloque o alvo para dormir ao cantar, você pode adaptar isso utilizando a
             vantagem <strong>Paralisia[+1pt]</strong>.
@@ -351,7 +373,9 @@
             <p>
               Dessa forma, você pode criar a vantagem
               <strong><em>"Canção de Ninar(Fada)"</em> Paralisia[+1pt]</strong>. Em efeitos práticos, ela segue a mesma
-              regra da vantagem <strong>Paralisia</strong> do <em>3DeT Victory</em>:
+              regra da vantagem <strong>Paralisia</strong> do
+              <a href="https://site.jamboeditora.com.br/3det/" target="_blank" rel="noopener noreferrer">3DeT Victory</a
+              >:
               <em
                 >realiza um ataque do tipo Fada e gasta 2PM. Se bem-sucedido, o alvo fica indefeso até o fim da cena ou
                 até sofrer dano. A cada turno, o alvo pode fazer um teste de R (6 + Poder do atacante) para cancelar o
@@ -375,12 +399,12 @@
           </p>
           <blockquote>
             <p>
-              Por exemplo, uma <strong>Jigglypuff(8pts)</strong> evoluindo para
-              <strong>Wigglytuff(12pts)</strong> precisa acumular <strong>40XP + Pedra da Lua</strong> para evoluir. Se
+              Por exemplo, uma <strong>Jigglypuff(7pts)</strong> evoluindo para
+              <strong>Wigglytuff(11pts)</strong> precisa acumular <strong>40XP + Pedra da Lua</strong> para evoluir. Se
               durante a criação da ficha da sua Jigglypuff, além das sugestões da <em>3DeT Victory Pokédex</em>, você
               adicionou a perícia <strong>Arte[+1pt]</strong> e uma Vantagem
               <strong><em>"Canção de Ninar(Fada)"</em> Paralisia[+1pt]</strong>, você estará criando uma
-              <strong>Jigglypuff(10pts)</strong>. No entanto,
+              <strong>Jigglypuff(9pts)</strong>. No entanto,
               <strong>sua necessidade de 40XP + Pedra da Lua continuará a mesma para sua evolução</strong> - a
               quantidade de XP necessária é sempre calculada a partir da versão base da <em>3DeT Victory Pokédex</em>.
             </p>
@@ -393,9 +417,9 @@
           <blockquote>
             <p>
               Vamos continuar utilizando o exemplo anterior: Durante a criação da ficha da sua Jigglypuff,
-              <strong>que por padrão tem 8 pontos</strong>, você adicionou uma perícia <strong>Arte[+1pt]</strong> e uma
+              <strong>que por padrão tem 7 pontos</strong>, você adicionou uma perícia <strong>Arte[+1pt]</strong> e uma
               Vantagem <strong><em>"Canção de Ninar(Fada)"</em> Paralisia[+1pt]</strong>,
-              <strong>tornando-a uma Jigglypuff(10pts)</strong>. Durante as suas aventuras por Viridian, acumulou
+              <strong>tornando-a uma Jigglypuff(9pts)</strong>. Durante as suas aventuras por Viridian, acumulou
               <strong>10XP</strong> e resolveu adquirir uma nova Vantagem
               <strong><em>"Hipervoz(Normal)"</em> Ataque Especial(Área)[+1pt]</strong>. O progresso em suas missões e
               batalhas te rendeu <strong>mais 30XP</strong>, totalizando <strong>40XP</strong> (ao somar os 10XP que
@@ -434,9 +458,287 @@
             </p>
           </blockquote>
         </div>
+        <div id="captura">
+          <h3>Como capturar um Pokémon?</h3>
+          <p>
+            Para tentar capturar um Pokémon, <strong>você - como treinador(a)</strong>, irá gastar uma ação para fazer
+            um <strong>Teste de Habilidade</strong> com <strong>Meta Resistida</strong>.
+          </p>
+          <p><strong>Meta = Pontos + Metade do PV Atual do Pokémon Alvo</strong></p>
+          <p class="leading-none">
+            <small><strong>Observação:</strong> Valores fracionados são sempre arredondados para baixo.</small>
+          </p>
+          <p>
+            A sua rolagem segue a <strong>regra padrão</strong> do
+            <a href="https://site.jamboeditora.com.br/3det/" target="_blank" rel="noopener noreferrer">3DeT Victory</a>:
+            <br />
+            <strong>1d6 + Habilidade do(a) Treinador(a) + 1d6(Perícia) + 1d6(Ganho)</strong>
+          </p>
+          <blockquote>
+            <p><strong>Vamos a um exemplo:</strong> Uma treinadora chamada Marina, com a seguinte ficha:</p>
+            <ul>
+              <li>
+                <strong>PTS:</strong> 5, <strong>P:</strong> 1 (PA: 1), <strong>H:</strong> 2 (PM: 5),
+                <strong>R:</strong> 1 (PV: 5)
+              </li>
+              <li><strong>Perícia:</strong> Especialista em Pokémon tipo Fada(Animais)</li>
+            </ul>
+            <p>
+              <strong>Marina</strong> acaba de partir da cidade de Pewter em direção a cidade de Cerulean através da
+              Rota 3 e no meio do caminho encontra uma <strong>Jigglypuff</strong> e pretende capturá-la.
+            </p>
+            <p>
+              Uma <strong>Jigglypuff</strong>, pelo padrão da <em>3DeT Victory Pokédex</em>, tem
+              <strong>7 pontos</strong> e um total de <strong>15 pontos de vida</strong>. Se
+              <strong>Marina</strong> tentar capturá-la sem ao menos enfraquecê-la, a meta do teste resistido seria de
+              <strong>14</strong>(7+15/2).
+            </p>
+            <p>
+              <strong>Marina</strong> tem <strong>Habilidade(2)</strong>, e tem a perícia
+              <strong>Especialista em Pokémon tipo Fada(Animais)</strong>, o que a concede <strong>1d6 extra</strong>.
+              Nesse caso, a rolagem de <strong>Marina</strong> seria <strong>2d6+2</strong>.
+            </p>
+            <p>
+              Perceba que, caso <strong>Marina</strong> consiga <strong>2 críticos</strong> com os dados, o que somaria
+              sua Habilidade mais 2 vezes, o seu maior resultado possível é <strong>18(6+6+2+2+2)</strong>. Capturar uma
+              <strong>Jigglypuff</strong> sem batalhar, ou sem uma Pokébola especial seria muito difícil.
+            </p>
+            <p>
+              <strong>Marina</strong> então decide utilizar seu <strong>Charmander</strong> para batalhar e enfraquecer
+              a <strong>Jigglypuff</strong>, deixando-a com <strong>3 pontos de vida</strong>. Em seu turno,
+              <strong>Marina</strong> decide lançar uma Pokébola.
+            </p>
+            <p>
+              Como o <strong>Jigglypuff</strong> está apenas com <strong>3 pontos de vida</strong> agora, a
+              <strong>meta é 8</strong>(7 + 3/2).
+            </p>
+            <p>
+              <strong>Marina</strong> lança seus <strong>2d6</strong>, obtendo um resultado <strong>4 e 3</strong>,
+              somado com sua <strong>Habilidade(2)</strong>, seu resultado no teste é <strong>9</strong>.
+            </p>
+            <p>Parabéns, <strong>Marina</strong>, você acaba de capturar um novo Pokémon!</p>
+          </blockquote>
+          <p class="leading-none">
+            <small><strong>Observação:</strong> Em caso de empate, o Pokémon é capturado.</small>
+          </p>
+          <h4>
+            Algumas <strong>Pokébolas especiais</strong> podem conceder <strong>bônus ou ganho</strong> ao tentar
+            capturar um Pokémon:
+          </h4>
+          <table class="table-auto">
+            <tbody class="divide-y divide-zinc-200">
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/master_ball.png" alt="Bola Mestra" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Mestra</td>
+                <td class="text-sm align-middle">O Pokémon é capturado sem a necessidade de teste.</td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/ultra_ball.png" alt="Ultra Bola" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Ultra Bola</td>
+                <td class="text-sm align-middle">Concede bônus de +4 ao teste.</td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/great_ball.png" alt="Grande Bola" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Grande Bola</td>
+                <td class="text-sm align-middle">Concede bônus de +2 ao teste.</td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/net_ball.png" alt="Bola Rede" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Rede</td>
+                <td class="text-sm align-middle">Concede Ganho quando o Pokémon alvo é do tipo Água ou Inseto.</td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/dive_ball.png" alt="Bola Mergulho" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Mergulho</td>
+                <td class="text-sm align-middle">Concede Ganho ao tentar capturar o Pokémon alvo embaixo d'água.</td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/nest_ball.png" alt="Bola Ninho" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Ninho</td>
+                <td class="text-sm align-middle">
+                  Concede um bônus de +1 para cada ponto a menos quando o Pokémon alvo tem menos de 10 Pontos.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/repeat_ball.png" alt="Bola Repetição" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Repetição</td>
+                <td class="text-sm align-middle">
+                  Concede Ganho quando o Pokémon alvo já é registrado como capturado em sua Pokédex.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/timer_ball.png" alt="Bola Cronômetro" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Cronômetro</td>
+                <td class="text-sm align-middle">
+                  Concede bônus de +1 ao teste por cada turno que se passou durante a batalha, acumulando um máximo de
+                  +6.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/dusk_ball.png" alt="Bola Crepúsculo" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Crepúsculo</td>
+                <td class="text-sm align-middle">Concede Ganho quando usada a noite ou em cavernas.</td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/quick_ball.png" alt="Bola Rápida" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Rápida</td>
+                <td class="text-sm align-middle">Concede Ganho ao ser usada no primero turno da batalha.</td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/level_ball.png" alt="Bola Nível" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Nível</td>
+                <td class="text-sm align-middle">
+                  Concede Ganho quando o seu Pokémon ativo tem mais Pontos que o Pokémon alvo.<br />
+                  Concede Ganho e bônus de +2 quando o seu Pokémon ativo tem o dobro ou mais Pontos que o Pokémon
+                  alvo.<br />
+                  Concede Ganho e bônus de +4 quando o seu Pokémon ativo tem o quádruplo ou mais Pontos que o Pokémon
+                  alvo.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/lure_ball.png" alt="Bola Isca" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Isca</td>
+                <td class="text-sm align-middle">Concede Ganho quando o Pokémon alvo foi pescado.</td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/heavy_ball.png" alt="Bola Pesada" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Pesada</td>
+                <td class="text-sm align-middle">
+                  Concede Ganho quando o Pokémon alvo tiver Resistência igual ou maior que 5. Concede Perda quando menor
+                  que 4.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/love_ball.png" alt="Bola Amor" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Amor</td>
+                <td class="text-sm align-middle">
+                  Concede Ganho e bônus de +4 quando o Pokémon alvo for do sexo oposto ao do seu Pokémon em batalha.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/moon_ball.png" alt="Bola Lua" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Lua</td>
+                <td class="text-sm align-middle">
+                  Concede Ganho quando o Pokémon alvo requer uma Pedra da Lua para evoluir.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/dream_ball.png" alt="Bola Sonho" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Sonho</td>
+                <td class="text-sm align-middle">Concede Ganho quando o Pokémon alvo está dormindo.</td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/balls/beast_ball.png" alt="Bola Criatura" class="m-0 w-10" />
+                </td>
+                <td class="text-sm font-bold align-middle">Bola Criatura</td>
+                <td class="text-sm align-middle">
+                  Concede Ganho e bônus de +2 quando o Pokémon alvo é uma Ultra Criatura. Concede Perda não é.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div id="treinador">
+          <h2>Como criar uma ficha de Treinador(a)?</h2>
+          <p>
+            <strong>No vasto mundo dos Pokémon, os verdadeiros protagonistas são os próprios monstrinhos!</strong>
+            Portanto, não nos preocupamos com grandes números aqui. Um <strong>ficha de treinador(a)</strong> deve ser
+            criada com a distribuição de <strong>5 pontos</strong>, e seguindo as mecânicas padrão do
+            <a href="https://site.jamboeditora.com.br/3det/" target="_blank" rel="noopener noreferrer">3DeT Victory</a>.
+          </p>
+          <blockquote>
+            <p>
+              Utilize a regra adicional de <strong>Especializações</strong> do
+              <a href="https://site.jamboeditora.com.br/3det/" target="_blank" rel="noopener noreferrer"
+                >3DeT Victory</a
+              >
+              para customizar sua ficha. Por exemplo, torne-se um Especialista em Pokémon tipo Inseto(Animais) para
+              adicionar um toque único à sua aventura.
+            </p>
+          </blockquote>
+          <div class="my-4 border bg-white rounded-xl shadow-xl overflow-hidden">
+            <div class="bg-zinc-900 text-zinc-100 p-4 flex flex-col sm:flex-row items-center gap-2">
+              <span class="pokemon__number text-xs bg-zinc-500 rounded-full px-2 empty:hidden">Treinador</span>
+              <h2 class="m-0 flex-1 !text-zinc-100"><span class="">Caça-Inseto</span> <small>(5pts)</small></h2>
+            </div>
+            <div class="flex flex-col-reverse sm:flex-row gap-4 p-4">
+              <div class="flex-1">
+                <div class="grid grid-cols-3 gap-2 mb-2">
+                  <div class="border-zinc-900 border-2 text-center rounded-lg overflow-hidden">
+                    <div class="bg-zinc-900 text-white font-bold">P</div>
+                    <div class="font-bold text-4xl h-10">
+                      <span>1</span>
+                    </div>
+                    <div class="border-t border-zinc-900 text-sm h-5">
+                      <span>PA: </span><span class="font-bold">1</span>
+                    </div>
+                  </div>
+                  <div class="border-zinc-900 border-2 text-center rounded-lg overflow-hidden">
+                    <div class="bg-zinc-900 text-white font-bold">H</div>
+                    <div class="font-bold text-4xl h-10">
+                      <span class="">2</span>
+                    </div>
+                    <div class="border-t border-zinc-900 text-sm h-5">
+                      <span>PM: </span><span class="font-bold">10</span>
+                    </div>
+                  </div>
+                  <div class="border-zinc-900 border-2 text-center rounded-lg overflow-hidden">
+                    <div class="bg-zinc-900 text-white font-bold line-clamp-1">R</div>
+                    <div class="font-bold text-4xl h-10">
+                      <span class="">1</span>
+                    </div>
+                    <div class="border-t border-zinc-900 text-sm h-5">
+                      <span>PV: </span><span class="font-bold">10</span>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="font-bold">Perícias:</div>
+                  <div class="text-sm">Especilista em Pokémon tipo Inseto(Animais)</div>
+                </div>
+              </div>
+              <div>
+                <img src="./assets/bug-catcher.png" alt="Caça-Inseto" class="mx-auto my-0 -mt-6 sm:-mt-12" />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="contato" class="max-w-prose mx-auto bg-white px-4 md:px-8 py-4 rounded-2xl shadow-lg">
-        <h2 class="text-yellow-500 mt-4">Fale Conosco</h2>
+        <h2 class="mt-4">Fale Conosco</h2>
         <p>
           Se surgirem dúvidas, se precisar de suporte ou se quiser contribuir com sugestões ou de qualquer outra forma
           para o projeto, não hesite em nos contatar através do email
