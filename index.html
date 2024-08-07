@@ -257,6 +257,16 @@
           <tbody class="divide-y divide-zinc-200">
             <tr>
               <td>
+                <span class="text-xs font-bold bg-sky-200 text-sky-600 px-2 py-1 rounded-full">Novo</span>
+              </td>
+              <td class="text-sm">
+                A seção <a href="#dynamax">Dynamax e Gigantamax</a> foi adicionada a área
+                <a href="#extras">Mecânicas Extras</a>. En breve será adiciona a seção Terastelização.
+              </td>
+              <td class="text-xs font-bold text-zinc-500">07/08/2024</td>
+            </tr>
+            <tr>
+              <td>
                 <span class="text-xs font-bold bg-orange-200 text-orange-600 px-2 py-1 rounded-full">Midia</span>
               </td>
               <td class="text-sm">
@@ -876,6 +886,575 @@
               >Lembre-se de que você só pode Mega Evoluir um único Pokémon por batalha. Ele retornará ao seu estágio
               anterior ao final da luta.</strong
             >
+          </p>
+        </div>
+        <div id="dynamax">
+          <h3>Como adicionar Dynamax e Gigantamax à minha campanha?</h3>
+          <div class="flex-0 flex items-center flex-col sm:flex-row sm:gap-4">
+            <div class="order-2 sm:order-1 inline-flex items-center sm:flex-col gap-4 sm:gap-0">
+              <img class="m-0 w-24" src="./assets/dynamax-band.png" alt="Bracelete Dynamax" />
+            </div>
+            <div class="flex-1 order-1 sm:order-2">
+              <p>
+                Para utilizar o Dynamax ou Gigantamax em um Pokémon, você, como <strong>Treinador</strong>, precisa
+                estar equipado com um <strong>Bracelete Dynamax</strong> e estar em um local específico onde a
+                transformação possa ocorrer (a critério do Mestre). Um exemplo desses locais são os ginásios da região
+                de Galar.
+              </p>
+            </div>
+          </div>
+          <p>
+            <strong
+              >O Dynamax ou Gigantamax só pode ser utilizado em um único Pokémon por batalha, e ele retornará à sua
+              versão natural ao final de 3 turnos.</strong
+            >
+          </p>
+          <p>
+            <strong>Qualquer Pokémon está apto ao Dynamax.</strong> Durante o Dynamax, o Pokémon receberá,
+            <strong>temporariamente</strong> pelos próximos <strong>3 turnos</strong>, as seguintes modificações:
+          </p>
+          <ul>
+            <li><strong>PV Máximo e Atual são dobrados</strong></li>
+            <li>
+              Movimentos de <strong>Condição</strong> (como Paralisar) são substituídos pela <strong>Guarda Max</strong>
+            </li>
+            <li>
+              Movimentos de <strong>Ataque</strong> são substituídos de acordo com a sua tipagem. Verifique a lista
+              abaixo:
+            </li>
+          </ul>
+          <table class="table-auto">
+            <tbody class="divide-y divide-zinc-200">
+              <tr>
+                <td class="text-sm align-middle">Normal (Condição)</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Guarda Max</span>
+                  Protege o usuário de um ataque inimigo. Ao repetir sucessivamente esse movimento role 1d6 para
+                  acerta-lo, diminua chance de sucesso em 2 possíveis resultados para cada repetição.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Aço</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Espinho de Aço Max</span>
+                  Rolagem de ataque e aumenta 1 de Resistência de todos os aliados do usuário. O efeito é cumulativo e
+                  dura até o final da batalha.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Água</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Gêiser Max</span>
+                  Rolagem de ataque e começa uma forte chuva que perdura por 5 turnos: Movimentos de Água são rolados
+                  com Ganho e Movimentos de Fogo são rolados com Perda.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Dragão</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Bafo Dracônico Max</span>
+                  Rolagem de ataque e ondas psíquicas tomam conta do ambiente por 5 turnos: Movimentos Psíquicos são
+                  rolados com Ganho e qualquer efeito que indique uma prioridade de iniciativa é anulado.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Elétrico</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Raio Max</span>
+                  Rolagem de ataque e eletrifica o terreno por 5 turnos: Movimentos Elétricos são rolados com Ganho e
+                  impede qualquer efeito que faça o alvo dormir.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Fada</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Queda Estelar Max</span>
+                  Rolagem de ataque e uma névoa toma conta do ambiente por 5 turnos: Movimentos do tipo Dragão são
+                  rolados com Perda e impede qualquer efeito que faça o alvo dormir, queimar, congelar ou ficar
+                  paralizado.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Fantasma</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Fantasma Max</span>
+                  Rolagem de ataque e diminui 1 de Resistência do alvo. O efeito é cumulativo e dura até o final da
+                  batalha.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Fogo</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Labareda Max</span>
+                  Rolagem de ataque e uma luz solar intensa é propagada por 5 turnos: Movimentos de Fogo são rolados com
+                  Ganho e Movimentos de Água são rolados com Perda.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Gelo</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Temporal de Granizo Max</span>
+                  Rolagem de ataque e invoca uma chuva de granizos por 5 turnos: Ao final de cada turno, o Pokémon alvo,
+                  que não seja do tipo Gelo, receberá 1/8 do próprio PV Máximo como dano.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Grama</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Flora Max</span>
+                  Rolagem de ataque e grama tomam conta do terreno por 5 turnos: Movimentos do tipo Grama são rolados
+                  com Ganho e todos os Pokémon na área afetada recuperam 1/16 do seu PV máximo no final de cada turno.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Inseto</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Inseto Max</span>
+                  Rolagem de ataque e diminui 1 de Poder do alvo. O efeito é cumulativo e dura até o final da batalha.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Lutador</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Punho Max</span>
+                  Rolagem de ataque e aumenta 1 de Poder do usuário. O efeito é cumulativo e dura até o final da
+                  batalha.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Normal</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Golpe Max</span>
+                  Rolagem de ataque e diminui 1 de Habilidade do alvo. O efeito é cumulativo e dura até o final da
+                  batalha.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Pedra</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Desabamento Max</span>
+                  Rolagem de ataque e invoca uma tempestade de areia por 5 turnos: Ao final de cada turno, o Pokémon
+                  alvo, que não seja do tipo Pedra, Terra ou Aço, receberá 1/8 do próprio PV Máximo como dano.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Sombrio</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Escuridão Max</span>
+                  Rolagem de ataque e diminui 1 de Resistência do alvo. O efeito é cumulativo e dura até o final da
+                  batalha.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Terra</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Oscilação Max</span>
+                  Rolagem de ataque e aumenta 1 de Resistência do usuário. O efeito é cumulativo e dura até o final da
+                  batalha.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Venenoso</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Corrosão Max</span>
+                  Rolagem de ataque e aumenta 1 de Poder de todos os aliados do usuário. O efeito é cumulativo e dura
+                  até o final da batalha.
+                </td>
+              </tr>
+
+              <tr>
+                <td class="text-sm align-middle">Voador</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Corrente Aérea Max</span>
+                  Rolagem de ataque e aumenta 1 de Habilidade de todos os aliados do usuário. O efeito é cumulativo e
+                  dura até o final da batalha.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p>
+            Para realizar o <strong>Gigantamax</strong>, o Pokémon precisa pertencer a uma das
+            <strong>espécies listadas abaixo</strong> e possuir o <strong>Fator Gigantamax</strong> (fica a critério do
+            Mestre realizar alguma rolagem de teste para determinar se o Pokémon recém-capturado tem o Fator ou não).
+          </p>
+          <p>
+            <strong>O Pokémon em Gigantamax recebe as mesmas modificações temporárias do Dynamax</strong>, porém um
+            <strong>movimento G-Max</strong> exclusivo é utilizado na substituição temporária dos movimentos daquela
+            tipagem. Confira a lista abaixo:
+          </p>
+          <table class="table-auto">
+            <tbody class="divide-y divide-zinc-200">
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/alcremie.png" alt="Alcremie G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Alcremie</td>
+
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Grande Final G-Max (Fada)</span>
+                  Rolagem de ataque e cura 1/8 do PV máximo de todos os Pokémon aliados.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/appletun.png" alt="Appletun G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Appletun</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Doçura G-Max (Grama)</span>
+                  Rolagem de ataque e cura quaisquer condição dos aliados.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/blastoise.png" alt="Blastoise G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Blastoise</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Canhão G-Max (Água)</span>
+                  Rolagem de ataque e continua a causar danos durante os próximos 4 turnos. O Pokémon alvo, que não seja
+                  do tipo Água, receberá 1/8 do próprio PV Máximo como dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/butterfree.png" alt="Butterfree G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Butterfree</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Confusão G-Max (Inseto)</span>
+                  Rolagem de ataque e paraliza, envenena ou faz o alvo dormir.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/centiskorch.png" alt="Centiskorch G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Centiskorch</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Centiferno G-Max (Fogo)</span>
+                  Rolagem de ataque e envolve o oponente em um vórtice de fogo durante os próximos 4 turnos. O Pokémon
+                  alvo, que não seja do tipo Fogo, receberá 1/8 do próprio PV Máximo como dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/charizard.png" alt="Charizard G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Charizard</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Queimada G-Max (Fogo)</span>
+                  Rolagem de ataque e envolve o oponente em um vórtice de fogo durante os próximos 4 turnos. O Pokémon
+                  alvo, que não seja do tipo Fogo, receberá 1/8 do próprio PV Máximo como dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/cinderace.png" alt="Cinderace G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Cinderace</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Bola de Chamas G-Max (Fogo)</span>
+                  Rolagem de ataque ignorando quaisquer efeito que impeça o alvo de receber dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/coalossal.png" alt="Coalossal G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Coalossal</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Vulcanismo G-Max (Pedra)</span>
+                  Rolagem de ataque e, durante os próximos 4 turnos, o Pokémon alvo, que não seja do tipo Fogo, receberá
+                  1/8 do próprio PV Máximo como dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/copperajah.png" alt="Copperajah G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Copperajah</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Onda de Aço G-Max (Aço)</span>
+                  Rolagem de ataque e espinhos metálicos surgem na área do oponente: Sempre que um novo Pokémon entra em
+                  batalha na área do oponente, recebe 1/8 do próprio PV máximo de dano do tipo Aço.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/corviknight.png" alt="Corviknight G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Corviknight</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Fúria do Vento G-Max (Voador)</span>
+                  Rolagem de ataque e remove quaisquer condições especiais de terreno, área e barreiras.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/drednaw.png" alt="Drednaw G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Drednaw</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Pedregulho G-Max (Água)</span>
+                  Rolagem de ataque e rochas pontiagudas surgem na área do oponente: Sempre que um novo Pokémon entra em
+                  batalha na área do oponente, recebe 1/8 do próprio PV máximo de dano do tipo Pedra.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/duraludon.png" alt="Duraludon G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Duraludon</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Pulverização G-Max (Dragão)</span>
+                  Rolagem de ataque e impede que o alvo repita o último movimento utilizado sucessivamente.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/eevee.png" alt="Eevee G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Eevee</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Abraço G-Max (Normal)</span>
+                  Rolagem de ataque e qualquer adversário do gênero oposto ficará apaixonado.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/flapple.png" alt="Flapple G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Flapple</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Acidez G-Max (Grama)</span>
+                  Rolagem de ataque e o alvo rola com Perda sempre que tentar esquivar de um movimento.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/garbodor.png" alt="Garbodor G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Garbodor</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Pestilência G-Max (Venenoso)</span>
+                  Rolagem de ataque e envenena o alvo.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/gengar.png" alt="Gengar G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Gengar</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Terror G-Max (Fantasma)</span>
+                  Rolagem de ataque e impede o oponente de fugir da batalha.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/grimmsnarl.png" alt="Grimmsnarl G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Grimmsnarl</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Cochilo G-Max (Sombrio)</span>
+                  Rolagem de ataque e faz o alvo dormir no próximo turno.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/hatterene.png" alt="Hatterene G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Hatterene</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Castigo G-Max (Fada)</span>
+                  Rolagem de ataque e deixa o alvo confuso.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/inteleon.png" alt="Inteleon G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Inteleon</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Hidro Snipe G-Max (Água)</span>
+                  Rolagem de ataque ignorando quaisquer efeito que impeça o alvo de receber dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/kingler.png" alt="Kingler G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Kingler</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Explosão de Espuma G-Max (Água)</span>
+                  Rolagem de ataque e diminui 1 de Habilidade de todos os oponentes. O efeito é cumulativo e dura até o
+                  final da batalha.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/lapras.png" alt="Lapras G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Lapras</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Ressonância G-Max (Gelo)</span>
+                  Rolagem de ataque e reduz o dano recebido pela metade durante 5 turnos.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/machamp.png" alt="Machamp G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Machamp</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Golpe Chi G-Max (Lutador)</span>
+                  Rolagem de ataque e aumenta a chance de acerto crítico em 1 possível resultado. O efeito é cumulativo
+                  e dura até o final da batalha.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/melmetal.png" alt="Melmetal G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Melmetal</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Derretimento G-Max (Aço)</span>
+                  Rolagem de ataque e impossibilita que o oponente utilize o mesmo movimento sucessivamente.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/meowth.png" alt="Meowth G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Meowth</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Corrida do Ouro G-Max (Normal)</span>
+                  Rolagem de ataque e deixa os adversários confusos. O Mestre pode conceder XP extra ao final da
+                  batalha, ou moedas, caso esteja utilizando alguma mecânica monetária alternativa.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/orbeetle.png" alt="Orbeetle G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Orbeetle</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Gravidade G-Max (Psíquico)</span>
+                  Rolagem de ataque e altera a gravidade no campo de batalha por 5 turnos: Todos os ataques são rolados
+                  com Ganho, inclusive do oponente, e impede Pokémons de deixarem o solo ou utilizarem quaisquer
+                  movimento que realize essa ação. Pokémon do tipo Terra perde sua imunidade ao tipo Terra.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/pikachu.png" alt="Pikachu G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Pikachu</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Trovoada G-Max (Elétrico)</span>
+                  Rolagem de ataque e paralisa todos os alvos.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/rillaboom.png" alt="Rillaboom G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Rillaboom</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Solo de Bateria G-Max (Grama)</span>
+                  Rolagem de ataque ignorando quaisquer efeito que impeça o alvo de receber dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/sandaconda.png" alt="Sandaconda G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Sandaconda</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Explosão de Areia G-Max (Terra)</span>
+                  Rolagem de ataque e invoca uma tempestade de areia por 5 turnos: Ao final de cada turno, o Pokémon
+                  alvo, que não seja do tipo Pedra, Terra ou Aço, receberá 1/8 do próprio PV Máximo como dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/snorlax.png" alt="Snorlax G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Snorlax</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Reabastecimento G-Max (Normal)</span>
+                  Rolagem de ataque e restaura as frutas que já foram consumidas.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/toxtricity.png" alt="Toxtricity G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Toxtricity</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Choque Atordoante G-Max (Elétrico)</span>
+                  Rolagem de ataque e envenena ou paralisa o alvo.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img
+                    src="./assets/gmax/urshifu-golpe-decisivo.png"
+                    alt="Urshifu Golpe Decisivo G-Max"
+                    class="m-0 w-10"
+                  />
+                </td>
+                <td class="text-sm align-middle">Urshifu Golpe Decisivo</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Golpe Ünico G-Max (Sombrio)</span>
+                  Rolagem de ataque ignorando quaisquer efeito que impeça o alvo de receber dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/urshifu-golpe-fluido.png" alt="Urshifu Golpe Fluido G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Urshifu Golpe Fluido</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Fluxo Veloz G-Max (Água)</span>
+                  Rolagem de ataque ignorando quaisquer efeito que impeça o alvo de receber dano.
+                </td>
+              </tr>
+              <tr>
+                <td class="w-10 align-middle">
+                  <img src="./assets/gmax/venusaur.png" alt="Venusaur G-Max" class="m-0 w-10" />
+                </td>
+                <td class="text-sm align-middle">Venusaur</td>
+                <td class="text-sm align-middle">
+                  <span class="block font-bold align-middle">Chicote de Vinha G-Max (Grama)</span>
+                  Rolagem de ataque e continua a causar danos durante os próximos 4 turnos. O Pokémon alvo, que não seja
+                  do tipo Grama, receberá 1/8 do próprio PV Máximo como dano.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="leading-none">
+            <small>
+              <strong>Observação:</strong> Você pode visualizar a versão G-Max dos Pokémon escrevendo o nome seguido de
+              Gmax na <em>3DeT Victory Pokédex</em>.
+            </small>
           </p>
         </div>
       </section>

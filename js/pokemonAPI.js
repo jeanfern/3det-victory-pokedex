@@ -57,7 +57,11 @@ export const fetchPokemon = async (pokemon) => {
 
     const ptsdeAcao = Math.max(poder, 1);
     const ptsdeMana = Math.max(habilidade * 5, 1);
-    const ptsdeVida = Math.max(resistencia * 5, 1);
+    let ptsdeVida = Math.max(resistencia * 5, 1);
+
+    if (data.name.endsWith('-gmax')) {
+      ptsdeVida *= 2;
+    }
 
     const typesData = await Promise.all(types.map(fetchTypeData));
 
